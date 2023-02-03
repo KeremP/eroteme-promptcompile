@@ -33,7 +33,7 @@ def lambda_handler(event, context):
 
     prompt = build_prompt(results, query)
 
-    resp = {'prompt':prompt}
+    resp = {'prompt':prompt, 'sources':sources}
     return resp
     
     
