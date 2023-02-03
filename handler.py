@@ -1,7 +1,7 @@
 import re
 from typing import List, Tuple
 
-# TODO: This should probably be replaced by some better sampling method but for now works (especially wrt content window length)
+# TODO: This should probably be replaced by some better sampling method but for now works (especially wrt context window length)
 def get_top_k(results: List[str], sources: List[dict], top_k: int = 2) -> Tuple[list]:
     return results[:top_k], sources[:top_k]
 
